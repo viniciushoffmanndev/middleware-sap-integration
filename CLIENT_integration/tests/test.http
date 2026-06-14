@@ -1,0 +1,53 @@
+@baseUrl = http://localhost:8000
+
+### 1. Cenário de Sucesso (Happy Path)
+# Valida se o fluxo assíncrono inicia perfeitamente
+POST {{baseUrl}}/webhook/contract-signed
+Content-Type: application/json
+
+{
+    "contract_ref": "c4b1a829-9dc4-4d1a-8533-87a1122a2026",
+    "customer_id": "CUST-9901",
+    "amount": 1500.50,
+    "company_code": "BR01"
+}
+
+
+### 2. Forçando Erro: Valor Negativo (Validation Error)
+# Deve quebrar na validação 'gt=0' do amount no Pydantic (Retorna 422 Unprocessable Entity)
+POST {{baseUrl}}/webhook/contract-signed
+Content-Type: application/json
+
+{
+    "contract_ref": "c4b1a829-9dc4-4d1a-8533-87a1122a2026",
+    "customer_id": "CUST-9901",
+    "amount": -50.00,
+    "company_code": "BR01"
+}
+
+
+### 3. Forçando Erro: Company Code Inválido (Validation Error)
+# Deve quebrar na restrição de tamanho (max_length=4) do company_code (Retorna 422)
+POST {{baseUrl}}/webhook/contract-signed
+Content-Type: application/json
+
+{
+    "contract_ref": "c4b1a829-9dc4-4d1a-8533-87a1122a2026",
+    "customer_id": "CUST-9901",
+    "amount": 250.00,
+    "company_code": "BRASIL01"
+}
+
+
+### 4. Teste de Resiliência: Forçar múltiplos disparos seguidos
+# Dispare este cenário repetidas vezes para testar o Worker contra a instabilidade de 33% do SAP_fake.
+# O banco do middleware deve registrar status "FAILED" com a mensagem do erro 503 sem travar o app.
+POST {{baseUrl}}/webhook/contract-signed
+Content-Type: application/json
+
+{
+    "contract_ref": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "customer_id": "CUST-9999",
+    "amount": 99999.99,
+    "company_code": "BR01"
+}
