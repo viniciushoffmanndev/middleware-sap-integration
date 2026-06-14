@@ -82,3 +82,16 @@ cd SAP_fake
 
 # Inicialize o servidor Uvicorn na porta 8001
 uvicorn app.main:app --port 8001 --reload
+<<<<<<< Updated upstream
+=======
+
+
+# Navegue até a pasta do CLIENT_integration
+cd CLIENT_integration
+
+# 2. Inicializar o Servidor Client
+uvicorn app.main:app --port 8000 --reload
+
+# 3. Abra test.http e faça os testes
+Send Request
+>>>>>>> Stashed changes
