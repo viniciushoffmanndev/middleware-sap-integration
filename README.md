@@ -46,7 +46,7 @@ Abaixo estão as gravações em vídeo de cada um dos cenários de teste sendo e
   </tr>
   <tr>
     <td>
-      [Placeholder: Gravando teste de sucesso HTTP 202 -> SAP 201]
+https://github.com/user-attachments/assets/77c27b2a-14d7-4de4-84e9-13497b5e9e94
     </td>
     <td>
       [Placeholder: Gravando bloqueio Pydantic gt=0 HTTP 422]
