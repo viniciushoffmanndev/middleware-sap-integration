@@ -45,9 +45,9 @@ Abaixo estão as gravações em vídeo de cada um dos cenários de teste sendo e
     <td align="center" width="50%"><b>2. Erro de Validação (Valor Negativo)</b></td>
   </tr>
   <tr>
-    <td>
-https://github.com/user-attachments/assets/77c27b2a-14d7-4de4-84e9-13497b5e9e94
-    </td>
+  <td>
+  <video src="https://github.com/user-attachments/assets/77c27b2a-14d7-4de4-84e9-13497b5e9e94" width="100%" controls></video>
+</td>
     <td>
       [Placeholder: Gravando bloqueio Pydantic gt=0 HTTP 422]
     </td>
