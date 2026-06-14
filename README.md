@@ -59,7 +59,8 @@ Abaixo estão as gravações em vídeo de cada um dos cenários de teste sendo e
   </tr>
   <tr>
     <td>
-      [Placeholder: Gravando bloqueio Pydantic max_length HTTP 422]
+<video src="https://github.com/user-attachments/assets/0a1af2ec-26b8-400a-8cc8-1d44a14fa88a"
+width="100%" controls></video>
     </td>
     <td>
       [Placeholder: Gravando captura de erro 503 e persistência de falha]
