@@ -63,7 +63,8 @@ Abaixo estão as gravações em vídeo de cada um dos cenários de teste sendo e
 width="100%" controls></video>
     </td>
     <td>
-      [Placeholder: Gravando captura de erro 503 e persistência de falha]
+<video src="https://github.com/user-attachments/assets/cf16f42d-81af-4a70-a692-4b72cea6f19a"
+width="100%" controls></video>
     </td>
   </tr>
 </table>
