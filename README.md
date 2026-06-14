@@ -49,7 +49,8 @@ Abaixo estão as gravações em vídeo de cada um dos cenários de teste sendo e
   <video src="https://github.com/user-attachments/assets/77c27b2a-14d7-4de4-84e9-13497b5e9e94" width="100%" controls></video>
 </td>
     <td>
-      [Placeholder: Gravando bloqueio Pydantic gt=0 HTTP 422]
+<video src="https://github.com/user-attachments/assets/65439b4c-a6a7-4519-956a-145e1be5eeff"
+  width="100%" controls></video>
     </td>
   </tr>
   <tr>
