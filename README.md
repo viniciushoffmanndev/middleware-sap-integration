@@ -69,8 +69,6 @@ width="100%" controls></video>
   </tr>
 </table>
 
-*(Nota: Você pode atualizar os caminhos e arquivos da tabela acima conforme gerar os prints reais na sua pasta img/)*
-
 ---
 
 ## 🛠️ Setup & Run
