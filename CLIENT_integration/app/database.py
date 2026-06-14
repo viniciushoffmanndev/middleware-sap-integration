@@ -22,7 +22,7 @@ else:
 # Cria uma engine e passa uma connect_args para garantir suporte a SSL da Neon
 async_engine = create_async_engine(
     DATABASE_URL,
-    echo=True,
+    echo=False,
     future=True,
     pool_pre_ping=True,
     pool_recycle=60,
